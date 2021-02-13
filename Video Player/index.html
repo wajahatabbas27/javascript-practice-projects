@@ -2,15 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/progress.css">
 </head>
 
 <body>
+    <h1>Video Player</h1>
+    <video src="./assets/video/video.mp4" id="screen" class="screen" poster="./assets/image/image.jpg"></video>
+
+    <div class="controls">
+
+        <button class="btn" id="play">
+            <i class="fas fa-play fa-2x"></i>
+        </button>
+
+        <button class="btn" id="stop">
+            <i class="fas fa-stop fa-2x"></i>
+        </button>
+
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+
+        <span id="timespan" class="timespan">00:00</span>
+    </div>
+    <br>
+    <br />
+
+    <h2>
+        <a href="../index.html" style="text-decoration: none; color: white;">Home</a>
+    </h2>
+
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6f3cd3b37e.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
